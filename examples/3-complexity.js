@@ -1,4 +1,5 @@
 /*
+  * @flow
  * Here's an example of checking if user-agent is a bot.
  *
  * There are two versions, isBotA (which is complex), isBotB (which is simpler).
