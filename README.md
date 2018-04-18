@@ -83,5 +83,6 @@ For more information, see [examples/0-lint-errors.js](examples/0-lint-errors.js)
 
 ### Cons
 
+- No code duplication detection.
 - Looks like it's mostly a nice UI on top of ESLint, GoLint, etc.
 - Seems to be lacking documentation on [API](https://support.codacy.com/hc/en-us/articles/207994675-Project-API).
