@@ -1,6 +1,6 @@
 // @flow
 
-function toUpper1(x: null | string) {
+function toUpper(x: null | string) {
   if (x === null) {
     return x
   } else {
