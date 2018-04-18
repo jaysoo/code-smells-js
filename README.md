@@ -23,3 +23,19 @@ Then you can see the difference:
 ```
 git diff
 ```
+
+## Code climate
+
+[https://codeclimate.com/](https://codeclimate.com/)
+
+### Features
+
+- Supports eslint
+
+## Codefactor
+
+[https://www.codefactor.io](https://www.codefactor.io)
+
+### Features
+
+- Supports eslint (but not `.eslintrc.js`)
