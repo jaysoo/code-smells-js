@@ -2,9 +2,9 @@
 
 This repository is a demonstration of common code smells, and how each tool may help combat them.
 
-## eslint
+## ESLint
 
-Eslint can find, and even fix, many JavaScript problems.
+ESLint can find, and even fix, many JavaScript problems.
 
 To show warnings and errors:
 
@@ -23,6 +23,8 @@ Then you can see the difference:
 ```
 git diff
 ```
+
+For more information, see [examples/0-lint-errors.js](examples/0-lint-errors.js).
 
 ## Code climate
 
