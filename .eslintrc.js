@@ -1,63 +1,4 @@
-const CONFUSING_GLOBALS = [
-  'addEventListener',
-  'blur',
-  'close',
-  'closed',
-  'confirm',
-  'defaultStatus',
-  'defaultstatus',
-  'event',
-  'external',
-  'find',
-  'focus',
-  'frameElement',
-  'frames',
-  'history',
-  'innerHeight',
-  'innerWidth',
-  'length',
-  'location',
-  'locationbar',
-  'menubar',
-  'moveBy',
-  'moveTo',
-  'name',
-  'onblur',
-  'onerror',
-  'onfocus',
-  'onload',
-  'onresize',
-  'onunload',
-  'open',
-  'opener',
-  'opera',
-  'outerHeight',
-  'outerWidth',
-  'pageXOffset',
-  'pageYOffset',
-  'parent',
-  'print',
-  'removeEventListener',
-  'resizeBy',
-  'resizeTo',
-  'screen',
-  'screenLeft',
-  'screenTop',
-  'screenX',
-  'screenY',
-  'scroll',
-  'scrollbars',
-  'scrollBy',
-  'scrollTo',
-  'scrollX',
-  'scrollY',
-  'self',
-  'status',
-  'statusbar',
-  'stop',
-  'toolbar',
-  'top'
-]
+const CONFUSING_GLOBALS = require('./.confusing-globals')
 
 module.exports = {
   env: {
@@ -96,22 +37,12 @@ module.exports = {
     'no-caller': 'warn',
 
     // disallow assignment operators in conditional expressions
-    // e.g. if (x =1)
+    // e.g. if (x = 1)
     'no-cond-assign': 'error',
-
-    // disallows reassigning const
-    'no-const-assign': 'error',
 
     // disallows use characters in ASCII range 0-31 in regex
     // this is usually a typo on part of the dev
     'no-control-regex': 'error',
-
-    // warns on deleting a property
-    'no-delete-var': 'warn',
-
-    // cannot reused variable name in function args
-    // BAD: function(a, b, a) {}
-    'no-dupe-args': 'error',
 
     // cannot reused class member name
     'no-dupe-class-members': 'error',
@@ -206,7 +137,7 @@ module.exports = {
     'no-unsafe-negation': 'warn', // supports --fix
 
     // removes unnecessary return at end of block
-    'no-throw-literal': 'warn', // supports --fix
+    'no-useless-return': 'warn', // supports --fix
 
     // disallows usages of undeclared variable
     'no-undef': 'error',
@@ -236,6 +167,10 @@ module.exports = {
 
     'rest-spread-spacing': ['warn', 'always'],
 
+    // These are here so React being unused in JSX files are okay.
+    'react/jsx-uses-react': 'warn',
+    'react/jsx-uses-vars': 'warn',
+
     // https://github.com/benmosher/eslint-plugin-import
     'import/first': 'error',
     'import/no-webpack-loader-syntax': 'error',
@@ -244,7 +179,7 @@ module.exports = {
     // Flow support
     // https://github.com/gajus/eslint-plugin-flowtype
     'flowtype/define-flow-type': 'warn',
-    'flowtype/require-valid-file-annotation': 'warn',
+    'flowtype/require-valid-file-annotation': ['warn', 'always'],
     'flowtype/use-flow-type': 'warn',
   }
 }
