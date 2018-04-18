@@ -30,7 +30,8 @@ git diff
 
 ### Features
 
-- Supports eslint
+- Supports eslint (including `.eslintrc.js`)
+- Has advanced [configuration options](https://docs.codeclimate.com/docs/advanced-configuration#section-exclude-patterns)
 
 ## Codefactor
 
@@ -38,4 +39,6 @@ git diff
 
 ### Features
 
-- Supports eslint (but not `.eslintrc.js`)
+- Supports eslint (but not `.eslintrc.js`... must use `.eslintrc` which is less flexible)
+- Configuration is limited, checks are all or nothing.
+  e.g. duplication does not support threshold, so cannot apply [Rule of Three](https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming))
