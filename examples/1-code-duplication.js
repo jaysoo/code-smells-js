@@ -15,3 +15,11 @@ function toUpper2(x: null | string) {
     return x.toUpperCase()
   }
 }
+
+function toUpper3(x: null | string) {
+  if (x === null) {
+    return x
+  } else {
+    return x.toUpperCase()
+  }
+}
